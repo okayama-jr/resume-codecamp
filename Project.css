@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bc.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.user-box img{
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 250px;
+    border: 2px solid slategray;
+}
+div.form-detail{
+    color: lightgrey;
+    font-weight: 300;
+    font-size: larger;
+}    
+
+span.form-layout{
+    color: whitesmoke;
+}
+p#my-object{
+    font-size: medium;
+    font-family: cursive;   
+}
+.user-box h1 {
+    font-family: cursive;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px;
+}
+.user-box p{
+    font-family: monospace;
+    color: #fff;
+    font-weight: 300%;
+    font-family: monospace;
+
+}
+h3.object{
+    font-family: initial;;
+}
+h3#left-object{
+    font-family: serif;
+}
+h3#right-object{
+    font-family: serif;
+}
+#paragrap-skill {
+    font-family: serif;
+}
+.about{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.profile-img{
+    border-radius: 50%;
+    height: 400px;
+}
+.nav-bar{
+    top:0;
+    position: sticky;
+    z-index: 2;
+    
+}
+span#color-code{
+    color: turquoise;
+}
+span#color-camp{
+    color: tomato;
+}
+.navbar-brand {
+    font-family: monospace;
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.skill-bar{
+    font-family: auto;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+.progress
+{
+    border-radius: 16px !important;
+    margin-bottom: 10px;
+}
+.progress-bar{
+    border-radius: 16px;
+
+}
+.resume 
+{
+    padding-top: 50px;
+    scroll-padding-bottom: 30px;
+    background: #f9f9f9;
+}
+.resume h3{
+    font-family: monospace;
+    margin-bottom: 50px;
+}
+p.paragrap-form{
+    font-family: monospace;
+    font-size: 15px;
+}
+.timeline{
+    list-style-type: none;
+    position: relative;
+}
+.timeline:before /*เส้นประหน้า*/
+{
+    content: '';
+    background:#555;  
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 1px;
+    height: 100%;
+    z-index: 1;
+}
+.timeline li
+{
+     margin-top: 20px;
+     margin-bottom: 20px;
+     margin-left: 20px;
+     background: #fff;
+}
+.timeline li h4{
+    background-color: cornflowerblue ;
+    padding: 5px 0 5px 20px;
+    column-rule-color: darkkhaki;
+    font-size: 15px;
+}
+.timeline li h4 span{
+    font-weight: 300;
+    color: #000;
+}
+.timeline li:before
+{
+    content: '';
+    background:skyblue;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #000;
+    left:20px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.services{
+    padding-top :50px;
+    padding-bottom: 50px;
+}
+.services h1{
+    margin-bottom: 10px;
+     
+}
+.services-box{
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.contact{
+    padding-top: 50px ;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color:#fff;
+}
+.contact .row{
+    padding: 30px;
+    font-size: 22px; 
+}
+.contact .col-md-4 .fa{
+    padding: 10px;
+    font-size: 40px;
+}
+p#contact{
+    color: #f9f9f9;
+    font-family: cursive;
+}
+h1#contact-me{
+    font-family: cursive;
+    color: #f9f9f9;
+}
+p#contact-social{
+    font-family: cursive;
+}
