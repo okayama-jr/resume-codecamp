@@ -46,9 +46,35 @@ p#my-object{
     font-family: cursive;   
 }
 
+button {
+    border-radius: 20px;
+    background:white;
+    border: none;
+    
+}
+button#btn{
+    border-radius: 10px;
+    overflow: visible;
+}
 
+div.btn-group.btn-group-toggle{
+    min-inline-size: -webkit-fill-available;
+}
+i.fa.fa-desktop {
+    color: DARKTURQUOISE;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+span#bg{
+    font-family: cursive;
+    color: salmon;
+}
 h3.object{
-    font-family: initial;;
+    font-family: initial;
+    text-align: center;
 }
 h3#left-object{
     font-family: serif;
@@ -56,8 +82,27 @@ h3#left-object{
 h3#right-object{
     font-family: serif;
 }
-#paragrap-skill {
+ul#out-Put-Text{
+    font-family: cursive;
+}
+h4{
     font-family: serif;
+}
+
+input#new-Text-edit{
+        inline-size: -webkit-fill-available;
+        overflow: visible;
+    }
+
+.btn-warning {
+    vertical-align: baseline;
+    color: #212529;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    font-size: smaller;
+    float: right;
+    font-family:cursive;
+    margin-left: 10px;
 }
 .about{
     padding-top: 100px;

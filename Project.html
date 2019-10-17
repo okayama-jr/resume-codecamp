@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Project.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
     <title>Resume</title>
 </head>
 <body>   
@@ -19,19 +22,19 @@
                 <img src="Jaron1.jpg"  style="margin-top: 100px;" >
                 <h1 id="upper">Resume</h1>
                     <div class="form-detail">
-                    Surname  :<span id="form-name" class="form-layout">Jaron</span><br>
+                    Surname  :<span id="form-name" class="form-layout">Jaron</span>   <i class="fa fa-edit" ></i><br>
                     </div>
             
                     <div class="form-detail">
-                     Lastname  :<span id="form-lastname" class="form-layout">Thongfoo</span><br>
+                     Lastname  :<span id="form-lastname" class="form-layout">Thongfoo</span>  <i class="fa fa-edit" ></i><br>
                     </div>
             
                     <div class="form-detail">
-                    Nickname  :<span id="form-nickname" class="form-layout">Ron</span><br>
+                    Nickname  :<span id="form-nickname" class="form-layout">Ron</span>  <i class="fa fa-edit" ></i><br>
                     </div>
-                    <P id="my-object">
+                    <P id="my-object" ><span>
                          Studennt Information Techonology 
-                         At Dhurakij Pubdit University
+                         At Dhurakij Pubdit University</span>   
                  </P>
             </div>    
         </div>
@@ -41,6 +44,7 @@
         <div  class="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#"><span id="color-code">Code</span><span id="color-camp">Camp</span></a>
+                    <button id="btn" onclick="blinkit()"><i class="fa fa-desktop" aria-hidden="true"> <span id="bg"> Background </span></i></button>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -50,45 +54,54 @@
                     </div>
                 </nav>   
             </div>    
-        <div class="about container" id="about"> 
+       <div class="about container" id="about"> 
             <div class="row">
                 <div class="col-md-6 text-center">
                     <img src="Jaron.jpg" class="profile-img ">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6" class="hide-show">
                     <h3 class="object">Skill</h3>
-                    <div class="skill-bar">
-                    <p>Adobe</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 65%">65%</div>
-                        </div>
-                    <p>Coding</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 60%">60%</div>
-                        </div>
-                    <p>Support</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 90%">90%</div>
-                        </div>
-                    <p>Creative</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 70%">70%</div>
-                        </div>
-                    <p>Design</p>
-                        <div class="progress">
-                            <div class="progress-bar" style="width: 50%">40%</div>
-                        </div>            
+
+                    <div>
+                                 
+                        <ul class="timeline" id="out-Put-Text">
+                            <li>
+                                Coding 
+                            </li>                           
+                            <li>
+                                Creative
+                            </li>
+                            <li>
+                                Css
+                                
+                            </li>
+                            <li>
+                                JavaScript
+                               
+                            </li>
+                            <li>
+                                Html
+                            </li>
+                          </ul>  
+                          <div>  
+                            <input type="text" id="new-Text-edit" placeholder="  Write your skill here">
+                              <buttom onclick="newElement()" class="btn btn-warning" >Add</buttom> 
+                              <buttom onclick="hideElement()"  class="btn btn-warning" id="hide-Add-Text">Cancel </buttom> 
+                              <buttom onclick="showElement()" class="btn btn-warning" id="show-Add-Text">Edit</buttom> 
+                            </div>
+                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--Experience-->
-        <div class="resume" id="resume">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
+            
+          
+             <!--Experience-->
+             <div class="resume" id="resume">
+                <div class="container">
+                  <div class="row">
+                      <div class="col-md-6">
                         <h3 id="left-object" class="text-center">Experience</h3>
-                        <ul class="timeline">
+                          <ul class="timeline">
                             <li>
                                 <h4><span> 2019 -</span>Internship</h4>
                                 <p class="paragrap-form">
@@ -96,7 +109,7 @@
                                     <b>Company</b> - สหการประมูล Union Auction จำกัด (มหาชน) <br>        
                                 </p>
                             </li>                           
-                            <li>
+                            <li>  
                                 <h4><span> 2018 - </span> Managing Online Store</h4>
                                 <p class="paragrap-form">
                                         April 2016 – present  <br>
@@ -114,21 +127,23 @@
                           
                         </ul>
                     </div>
-                    <!--Edcuation-->
-                    <div class="col-md-6">
+                    
+                    
+            <!--Edcuation-->
+                    
+                  <div class="col-md-6">
                     <h3 id="right-object" class="text-center">Education</h3>
-                    <ul class="timeline">
+                      <ul class="timeline">
                         <li>
-                            <h4><span> 2019 - </span>(Present) bachelor of Thechnology</h4>
+                            <h4></span> 2019 - </span>(Present) bachelor of Thechnology</h4>
                             <p class="paragrap-form">
                                     Dhurakij Pundit University
-                                    Bachelor of Science in Information Technology  <br>
-                                   
+                                    Bachelor of Science in Information Technology  <br>    
                             </p>
                         </li>
                         
                         <li>
-                            <h4><span> 2012 -2015</span>  High school</h4>
+                            <h4> 2012 -2015  High school</h4>
                             <p class="paragrap-form">
                                     Surasakmontree School <br>
                                     
@@ -139,16 +154,17 @@
                             <h4><span> 2010 -2012</span> I graduated from a primary</h4>
                             <p class="paragrap-form">
                                     Chaibadan wittaya School <br>
-
                             </p>
                         </li>
                     </ul>
                 </div>      
             </div>
          </div>
-    </div>
+      </div>
+
     <!--contact-->
-    <div class="contact" id="contact">
+    
+      <div class="contact" id="contact">
         <div class="container text-center">
             <h1 id="contact-me">Contact Me</h1>
               <p class="text-center" id="contact">FaceBook Instragram Email</p>
@@ -165,6 +181,95 @@
               </div>
         </div>
     </div>
-</section>
+    
+    <script>
+       $('#new-Text-edit').hide();
+
+      
+            $(function() {
+              $('.form-layout').on('click', function() {
+                let editText = $(this);
+                let addtext = editText.find('input:text');//get textbox, if exist
+                if (addtext.length) {//text box already exist
+                  editText.text(addtext.val());//remove text box & put its current value as text to the editText
+                } else {
+                  addtext = $('<input>').prop({'type': 'text','value': editText.text()//set text box value from editText current text
+                  });
+                  editText.empty().append(addtext);//add new text box
+                  addtext.focus();//put text box on focus
+                }
+              });
+            }); 
+            
+      </script>
+        <script>
+          function hideElement(){
+            
+              $('#new-Text-edit').hide();
+              //$('#new-Text-edit').show();
+          }
+        </script>
+
+        <script>
+          function showElement(){
+            
+              $('#new-Text-edit').show();
+              //$('#new-Text-edit').show();
+          }
+        </script>
+
+        <script>
+          //.js เพิ่ม list เเละ ลบ list colum
+              var newListToSkill = document.getElementsByTagName("lI");
+              var i;
+                for (i = 0; i < newListToSkill.length; i++) 
+                {
+                  var span = document.createElement("SPAN");
+                  var txt = document.createTextNode("\u00D7");
+                  span.className = "close";
+                  span.appendChild(txt);
+                  newListToSkill[i].appendChild(span);
+                }
+
+                  var remove = document.getElementsByClassName("close");
+                  var i;
+                  for (i = 0; i < remove.length; i++)
+                  {
+                  remove[i].onclick = function() 
+                  {
+                  var div = this.parentElement;
+                  div.style.display = "none";
+                  }
+                }
+            // function add newText
+              function newElement()
+              {
+                  var li = document.createElement("li");
+                  var inputValue = document.getElementById("new-Text-edit").value;
+                  var t = document.createTextNode(inputValue);
+                  li.appendChild(t);
+                  if (inputValue === '') 
+                  {
+                        alert("You must write something!");
+                  } else {
+                  document.getElementById("out-Put-Text").appendChild(li);
+                          }   
+                  document.getElementById("new-Text-edit").value = "";
+                  var span = document.createElement("SPAN");
+                  var txt = document.createTextNode("\u00D7");
+                  span.className = "close";
+                  span.appendChild(txt);
+                  li.appendChild(span);
+                  for (i = 0; i < remove.length; i++) 
+                  {
+                  remove[i].onclick = function () 
+                  {
+                  var div = this.parentElement;
+                  div.style.display = "none";
+                  }
+                  }
+                }
+        </script>
+      </section>
     </body>
 </html>
