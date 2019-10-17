@@ -181,28 +181,22 @@
               </div>
         </div>
     </div>
-    
-    <script>
-       $('#new-Text-edit').hide();
-
-      
-            $(function() {
-              $('.form-layout').on('click', function() {
-                let editText = $(this);
-                let addtext = editText.find('input:text');//get textbox, if exist
-                if (addtext.length) {//text box already exist
-                  editText.text(addtext.val());//remove text box & put its current value as text to the editText
-                } else {
-                  addtext = $('<input>').prop({'type': 'text','value': editText.text()//set text box value from editText current text
-                  });
-                  editText.empty().append(addtext);//add new text box
-                  addtext.focus();//put text box on focus
-                }
-              });
-            }); 
-            
-      </script> 
         <script>
+            $('#new-Text-edit').hide(); //hide element id(new-Text-edit)
+                 $(function() {
+                   $('.form-layout').on('click', function() {
+                     let editText = $(this);
+                     let addtext = editText.find('input:text');//get textbox
+                     if (addtext.length) {//text box already 
+                       editText.text(addtext.val());//remove text box & put its current value as text to the editText
+                     } else {
+                       addtext = $('<input>').prop({'type': 'text','value': editText.text()//set text box value from editText current text
+                       });
+                       editText.empty().append(addtext);//add new text box
+                       addtext.focus();//put text box on focus
+                     }
+                   });
+                 }); 
           function hideElement()
         {
             

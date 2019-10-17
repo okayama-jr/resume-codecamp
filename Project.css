@@ -110,6 +110,7 @@ input#new-Text-edit{
     float: right;
     font-family:cursive;
     margin-left: 10px;
+    margin-top: 5px;
 }
 .about{
     padding-top: 100px;
