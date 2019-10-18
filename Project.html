@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="Project.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
     <title>Resume</title>
 </head>
+
 <body>   
-    <section id="header">
+    <section id="header-one" class="header">
         <div class="container text-center">
             <div class="user-box">
                 <img src="Jaron1.jpg"  style="margin-top: 100px;" >
                 <h1 id="upper">Resume</h1>
                     <div class="form-detail">
-                    Surname  :<span id="form-name" class="form-layout">Jaron</span>   <i class="fa fa-edit" ></i><br>
+                    Firstname  :<span id="form-name" class="form-layout">Jaron</span>   <i class="fa fa-edit" ></i><br>
                     </div>
             
                     <div class="form-detail">
@@ -36,15 +36,18 @@
                          Studennt Information Techonology 
                          At Dhurakij Pubdit University</span>   
                  </P>
+                 <p id="notification-alert">
+                   <span>(click name for edit !!!)</span>
+                 </p>
             </div>    
         </div>
     </section>
     <!--user-->
-    <section id="user-info">
+    <section class="add-back-graound" id="user-info">
         <div  class="nav-bar">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#"><span id="color-code">Code</span><span id="color-camp">Camp</span></a>
-                    <button id="btn" onclick="blinkit()"><i class="fa fa-desktop" aria-hidden="true"> <span id="bg"> Background </span></i></button>
+                    <button  ondblclick="changeBackground()"><i class="fa fa-desktop" aria-hidden="true"> <span > Background </span></i></button>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
@@ -57,7 +60,7 @@
        <div class="about container" id="about"> 
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <img src="Jaron.jpg" class="profile-img ">
+                    <img src="Jaron.jpg" class="profile-img " >
                 </div>
                 <div class="col-md-6" class="hide-show">
                     <h3 class="object">Skill</h3>
@@ -65,27 +68,27 @@
                     <div>
                                  
                         <ul class="timeline" id="out-Put-Text">
-                            <li>
+                            <li class="tav-color">
                                 Coding 
                             </li>                           
-                            <li>
+                            <li class="tav-color">
                                 Creative
                             </li>
-                            <li>
+                            <li class="tav-color">
                                 Css
                                 
                             </li>
-                            <li>
+                            <li class="tav-color">
                                 JavaScript
                                
                             </li>
-                            <li>
+                            <li class="tav-color">
                                 Html
                             </li>
                           </ul>  
                           <div>  
-                            <input type="text" id="new-Text-edit" placeholder="  Write your skill here">
-                              <buttom onclick="newElement()" class="btn btn-warning" >Add</buttom> 
+                            <input type="text" id="new-Text-edit"  placeholder="  Write your skill here">
+                              <buttom onclick="addTextNew()" class="btn btn-warning" >Add</buttom> 
                               <buttom onclick="hideElement()"  class="btn btn-warning" id="hide-Add-Text">Cancel </buttom> 
                               <buttom onclick="showElement()" class="btn btn-warning" id="show-Add-Text">Edit</buttom> 
                             </div>
@@ -102,68 +105,68 @@
                       <div class="col-md-6">
                         <h3 id="left-object" class="text-center">Experience</h3>
                           <ul class="timeline">
-                            <li>
-                                <h4><span> 2019 -</span>Internship</h4>
+                            <ol>
+                                <h4 class="head-topics"><span> 2019 -</span>Internship</h4>
                                 <p class="paragrap-form">
                                         August 2019 -present  <br>
                                     <b>Company</b> - สหการประมูล Union Auction จำกัด (มหาชน) <br>        
                                 </p>
-                            </li>                           
-                            <li>  
-                                <h4><span> 2018 - </span> Managing Online Store</h4>
+                            </ol>                           
+                            <ol>  
+                                <h4 class="head-topics" ><span> 2018 - </span> Managing Online Store</h4>
                                 <p class="paragrap-form">
                                         April 2016 – present  <br>
                                     <b>Company</b> - PerfectCombination Co., Ltd. <br>                                          
                                 </p>
-                            </li>
+                            </ol>
                             
-                            <li>
-                                <h4><span> 2017 -</span>Retail Store Sale Person </h4>
+                            <ol>
+                                <h4 class="head-topics"><span> 2017 -</span>Retail Store Sale Person </h4>
                                 <p class="paragrap-form">
                                         April 2016 – present PerfectCombination Co., Ltd. <br>
                                     <b>Company</b> - PerfectCombination Co., Ltd. <br>     
                                 </p>
-                            </li>
+                            </ol>
                           
                         </ul>
                     </div>
-                    
                     
             <!--Edcuation-->
                     
                   <div class="col-md-6">
                     <h3 id="right-object" class="text-center">Education</h3>
                       <ul class="timeline">
-                        <li>
-                            <h4></span> 2019 - </span>(Present) bachelor of Thechnology</h4>
+                        <ol>
+                            <h4 class="head-topics"><span>2019 - </span>(Present) bachelor of Thechnology</h4>
                             <p class="paragrap-form">
                                     Dhurakij Pundit University
                                     Bachelor of Science in Information Technology  <br>    
                             </p>
-                        </li>
+                        </ol>
                         
-                        <li>
-                            <h4> 2012 -2015  High school</h4>
+                        <ol>
+                            <h4 class="head-topics"> <span>2012 -2015 </span>  High school</h4>
                             <p class="paragrap-form">
                                     Surasakmontree School <br>
                                     
                             </p>
-                        </li>
+                        </ol>
 
-                        <li>
-                            <h4><span> 2010 -2012</span> I graduated from a primary</h4>
+                        <ol>
+                            <h4 class="head-topics"><span> 2010 -2012</span> I graduated from a primary</h4>
                             <p class="paragrap-form">
                                     Chaibadan wittaya School <br>
                             </p>
-                        </li>
+                        </ol>
                     </ul>
                 </div>      
             </div>
          </div>
       </div>
+    </section>
 
     <!--contact-->
-    
+    <section id="footer">
       <div class="contact" id="contact">
         <div class="container text-center">
             <h1 id="contact-me">Contact Me</h1>
@@ -181,34 +184,41 @@
               </div>
         </div>
     </div>
-        <script>
-            $('#new-Text-edit').hide(); //hide element id(new-Text-edit)
+  </section>   
+        <script> //Edit name on header
+        alert("คลิกที่ชื่อนาสกุลสามารถเเก้ไขชื่อและนามสกุลได้ ดับเบิ้ลคลิกที่ปุ่ม Background สามารถเปลี่ยนรูปพื้นหลังได้ เเละสามารถกดปุ่ม Edit เพื่อเพิ่มหรือลบข้อมูลความสามารถได้")
+          $('#new-Text-edit').hide();   
                  $(function() {
                    $('.form-layout').on('click', function() {
                      let editText = $(this);
-                     let addtext = editText.find('input:text');//get textbox
-                     if (addtext.length) {//text box already 
-                       editText.text(addtext.val());//remove text box & put its current value as text to the editText
+                     let addtext = editText.find('input:text');
+                     if (addtext.length) { 
+                       editText.text(addtext.val());
                      } else {
-                       addtext = $('<input>').prop({'type': 'text','value': editText.text()//set text box value from editText current text
+                       addtext = $('<input>').prop({'type': 'text','value': editText.text()
                        });
-                       editText.empty().append(addtext);//add new text box
-                       addtext.focus();//put text box on focus
+                       editText.empty().append(addtext);
+                       addtext.focus();
                      }
                    });
                  }); 
-          function hideElement()
-        {
-            
-            $('#new-Text-edit').hide();
-            //$('#new-Text-edit').show();
-        }
-        function showElement()
-        {
+          function changeBackground() //change background function
+          {
+            $('#header-one').toggleClass("header-one");
+          }
+  
           
-          $('#new-Text-edit').show();
-          //$('#new-Text-edit').show();
-        }
+          function hideElement() //hide input text 
+          {
+            $('#new-Text-edit').hide();
+          }
+          function showElement() //show input text 
+          { 
+            $('#new-Text-edit').show();
+          }
+          
+          
+          
           //.js เพิ่ม list เเละ ลบ list colum
               var newListToSkill = document.getElementsByTagName("lI");
               var i;
@@ -232,7 +242,7 @@
                   }
                 }
             // function add newText
-              function newElement()
+              function addTextNew()
               {
                   var li = document.createElement("li");
                   var inputValue = document.getElementById("new-Text-edit").value;
@@ -260,6 +270,6 @@
                   }
                 }
         </script>
-      </section>
+      
     </body>
 </html>

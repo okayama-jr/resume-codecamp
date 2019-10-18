@@ -5,19 +5,25 @@ body{
     padding: 0;
     font-family: sans-serif;
 }
-#header{
+.header{
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bo.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-#headerNewstyleWhenClick{
+
+.header-one{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bc.jpg);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(nihon.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;  
+}
+section#user-info{
+    background-image: url(nihon1.jpg);
+    background-size: contain;
+
 }
 
 .user-box img{
@@ -47,6 +53,9 @@ div.form-detail{
 
 span.form-layout{
     color: whitesmoke;
+}
+span#notification-alert{
+    font-family: monospace;
 }
 p#my-object{
     font-size: medium;
@@ -99,7 +108,10 @@ h4{
 input#new-Text-edit{
         inline-size: -webkit-fill-available;
         overflow: visible;
+        border-radius: 20px;
+        padding: 9.5px;
     }
+  
 
 .btn-warning {
     vertical-align: baseline;
@@ -174,6 +186,7 @@ p.paragrap-form{
     list-style-type: none;
     position: relative;
 }
+
 .timeline:before /*เส้นประหน้า*/
 {
     content: '';
@@ -187,6 +200,8 @@ p.paragrap-form{
 }
 .timeline li
 {
+    padding: 9.5px;
+    border-radius: 10px;
      margin-top: 20px;
      margin-bottom: 20px;
      margin-left: 20px;
@@ -258,6 +273,12 @@ h1#contact-me{
 p#contact-social{
     font-family: cursive;
 }
+h4.head-topics{
+    font-size: initial;
+    font-family: cursive;
+    background-color:wheat;
+}
+
 @media screen and (max-width: 768px){
     .user-box img{
         border-radius: 50%;
@@ -277,5 +298,13 @@ p#contact-social{
     h1#upper {
         margin-top: 40;
         padding-top: 100px;     
+    }
+}
+@media screen and (max-width: 768px){
+    p#notification-alert{
+        font-size: xx-small;
+        float: right;
+        margin-right: 12px;
+        
     }
 }
